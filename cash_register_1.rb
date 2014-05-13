@@ -14,7 +14,7 @@ change = payment - price
 change = "%.2f" % change
 owed = price - payment
 owed = "%.2f" % owed
-time = Time.now
+time = Time.now.strftime("%Y-%m-%d %H:%M")
 
 if payment == price
   print "Have a nice day!"
